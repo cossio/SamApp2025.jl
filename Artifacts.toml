@@ -1,0 +1,127 @@
+[2024-03-14-SAMAPS2-500Artificial-resequenced-condition]
+git-tree-sha1 = "f5be8e0cd91a5116987be285154f2f2f27280144"
+lazy = true
+
+    [[2024-03-14-SAMAPS2-500Artificial-resequenced-condition.download]]
+    sha256 = "427e99122062636dc2b34f99943940cda34cdd525523e908716cfd1f72f797e8"
+    url = "https://gist.github.com/cossio/1d918ac4e72224a9113b8d32f316dbc1/raw/f5be8e0cd91a5116987be285154f2f2f27280144.tar.gz"
+
+[Designed_Sequences_20230317]
+git-tree-sha1 = "72f2247b6ab9b0a24c4b4a03174b5a4a7c2e0b49"
+lazy = true
+
+    [[Designed_Sequences_20230317.download]]
+    sha256 = "f94d0f0e7f417d4d909bafd9278310107eaf276a20e09af60320dc8d89415a96"
+    url = "https://gist.github.com/cossio/dd697d8e9d442d08ab9ba43cf31cd75d/raw/72f2247b6ab9b0a24c4b4a03174b5a4a7c2e0b49.tar.gz"
+
+[yann_sequences_20230322]
+git-tree-sha1 = "5da88f70cfd377c6d284e0b05e35909aa89967de"
+lazy = true
+
+    [[yann_sequences_20230322.download]]
+    sha256 = "5e019f535f4ca1dd2f9a448d13febe0d26c5ccb13b52f647564f4156d9e68565"
+    url = "https://gist.github.com/cossio/82219ec390887ffe00c1e068824806ac/raw/c4d02f1b8080ab8be85f3872f88a1c10f9f82d9b/yann_sequences.tar.gz"
+
+[RBM2022]
+git-tree-sha1 = "3fa27e80fe3783e611f185fc2f986a6e01309d6b"
+lazy = true
+
+    [[RBM2022.download]]
+    sha256 = "3fbc33fc0b471551e7200503bbde62b4310822071554a55f7706824e1a39ebdd"
+    url = "https://gist.github.com/cossio/64376dac299a8e5d0450dda5c1a6395a/raw/3fa27e80fe3783e611f185fc2f986a6e01309d6b.tar.gz"
+
+["SAMAP-demux-repl0-and-repl4+5-2023-09"]
+git-tree-sha1 = "86aa3d1cba36f1b178479a0784bfd5b25c714ca5"
+lazy = true
+
+    [["SAMAP-demux-repl0-and-repl4+5-2023-09".download]]
+    sha256 = "7f13906e08baee66d27d518350a4a9ab64e272a171d355637193fdf323a064b4"
+    url = "https://gist.github.com/cossio/8327de3d9644286438b746abb9a2debd/raw/86aa3d1cba36f1b178479a0784bfd5b25c714ca5.tar.gz"
+
+[probed_aptamers_table_20221027]
+git-tree-sha1 = "43561b21d4cf2819626f0b0095e4e708dc6444a2"
+lazy = true
+
+    [[probed_aptamers_table_20221027.download]]
+    sha256 = "5ee6075a571a64f3190bb7dc3e585d8e77f0dc4cf5293ba5fb6a6c9534123c40"
+    url = "https://gist.github.com/cossio/ed2bb4e4c573957ba24870193d18650f/raw/43561b21d4cf2819626f0b0095e4e708dc6444a2.tar.gz"
+
+[pierre20221107post]
+git-tree-sha1 = "c68de43eef29914e04e85bf675f7afda9ebe6e76"
+lazy = true
+
+    [[pierre20221107post.download]]
+    sha256 = "e88a3e1508ae5929350c6c5af112b6d1636f4b366aa65f203516a31d2537a6a1"
+    url = "https://gist.github.com/cossio/882f9078e7632c244443fc23d06ac32b/raw/c68de43eef29914e04e85bf675f7afda9ebe6e76.tar.gz"
+
+[Pierre20221107ShapeAnnotations]
+git-tree-sha1 = "04901fc58e794c59c47e42e43ea5d98d747b0fdf"
+lazy = true
+
+    [[Pierre20221107ShapeAnnotations.download]]
+    sha256 = "d4a4cb7168b092df80640d4cf7bc159e6de73c92fbede3c5e28b10b3f35997c5"
+    url = "https://gist.github.com/cossio/397612cbcd9dfe8565dbde0a0462c819/raw/04901fc58e794c59c47e42e43ea5d98d747b0fdf.tar.gz"
+
+[rbm2022-samples]
+git-tree-sha1 = "9b26accb101847e0854dac8c506b2dbf8d891d78"
+lazy = true
+
+    [[rbm2022-samples.download]]
+    sha256 = "33685e008518fe12436fea2b0475cd0f8cf38a13fad7f0fffe816f045de8af0b"
+    url = "https://gist.github.com/cossio/0f71c46d09a74cdde9f41caef617d56f/raw/9b26accb101847e0854dac8c506b2dbf8d891d78.tar.gz"
+
+[rf00162_14_7_taxonomy]
+git-tree-sha1 = "176801a268fead07e24fe4a9e6f76a68be7de74c"
+lazy = true
+
+    [[rf00162_14_7_taxonomy.download]]
+    sha256 = "115cacc5143d7b6b4e680e49fe0da71b4f807701656879bb3ba4a6ce023c13b0"
+    url = "https://gist.github.com/cossio/d892a209c2cadffb16ba72d78437f9c6/raw/176801a268fead07e24fe4a9e6f76a68be7de74c.tar.gz"
+
+[SAMAP_ALL-REP-MERGED-2023-10-27]
+git-tree-sha1 = "3fb28142091e8b33b12f3a2ba09bf54faf56b039"
+lazy = true
+
+    [[SAMAP_ALL-REP-MERGED-2023-10-27.download]]
+    sha256 = "23ab34615776fdacbe83ab7dcb7ead9ae9ea59aa90a1e0687886f4e6c392bddc"
+    url = "https://gist.github.com/cossio/661ce7c22cb66c5549635b0e6cb7971b/raw/3fb28142091e8b33b12f3a2ba09bf54faf56b039.tar.gz"
+
+[SAMAP-demux-repl123-2023-09]
+git-tree-sha1 = "31f8353891f0642bc612d02ef2586a02cca4099f"
+lazy = true
+
+    [[SAMAP-demux-repl123-2023-09.download]]
+    sha256 = "0370f57e17090db4c3c69b22997dafe7dadeacb873c992983feee46180fd0f4f"
+    url = "https://gist.github.com/cossio/b93397a2ad9255dd21face2e043b7a89/raw/31f8353891f0642bc612d02ef2586a02cca4099f.tar.gz"
+
+[Sequencing_Groups_2024-11-27]
+git-tree-sha1 = "75c70f2e879de46ab880220d25df5a7b42ebb95f"
+lazy = true
+
+    [[Sequencing_Groups_2024-11-27.download]]
+    sha256 = "8aba3db0798431582995f4994b9409085c96888bcc3b52381f803b9e83fba953"
+    url = "https://gist.github.com/cossio/3a0c74fef8eec8e8a63f575b28d8a9c8/raw/75c70f2e879de46ab880220d25df5a7b42ebb95f.tar.gz"
+
+[Sequencing_Groups_2024-11-27_clean]
+git-tree-sha1 = "db7367affd5c4e22664c3717f1a5eda7d71b9fd6"
+lazy = true
+
+    [[Sequencing_Groups_2024-11-27_clean.download]]
+    sha256 = "e879c5a515fba2b501cd723ce7bb90fd98e4f5661e7337241ae41ed47a8dae39"
+    url = "https://gist.github.com/cossio/de1f92612b1c34b13fa38af9fccbc3ab/raw/db7367affd5c4e22664c3717f1a5eda7d71b9fd6.tar.gz"
+
+[2025-03-03_DMS_data]
+git-tree-sha1 = "cd97c3eff9d45294cd54b2377480cd4e5cf71604"
+lazy = true
+
+    [[2025-03-03_DMS_data.download]]
+    sha256 = "1e56fb6326ab359506ec5c912caf340f65549eac6d4f86f0d35dfb3311001835"
+    url = "https://gist.github.com/jfdcd/0a21d96ea4ea14bab2a9dea763ee1b46/raw/cd97c3eff9d45294cd54b2377480cd4e5cf71604.tar.gz"
+
+[2025-04-28_aligned_full_riboswitch_sequences]
+git-tree-sha1 = "3924162b46a416d4a9f48678d90b80301dce1073"
+lazy = true
+
+    [[2025-04-28_aligned_full_riboswitch_sequences.download]]
+    sha256 = "254a0710bd6bf7160b0366559a032c24d81fd60a4da1b405349d31ddd327fac9"
+    url = "https://gist.github.com/jfdcd/cf9a0c44e1b1509b44cdfd9e4b432496/raw/3924162b46a416d4a9f48678d90b80301dce1073.tar.gz"
