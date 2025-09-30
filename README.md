@@ -68,7 +68,7 @@ The code implementing Restricted Boltzmann machines (training, sampling, and oth
 
 The code for simulations of other riboswitch families (reported in Supplementary Materials of the paper cited above) can be found at the following repository: https://github.com/cossio/RiboswitchesSimulations20240620.jl.
 
-For an alternative implementation of Restricted Boltzmann machines in Python, see https://github.com/jertubiana/PGM. In particular, we have prepared a repository at https://github.com/cossio/SamApp2025Py, showing how to use this Python package to train an RBM on RNA sequences from the RF00162 family.
+For an alternative implementation of Restricted Boltzmann machines in Python, see https://github.com/jertubiana/PGM. In particular, we have prepared a repository at https://github.com/cossio/SamApp2024Py, showing how to use this Python package to train an RBM on RNA sequences from the RF00162 family.
 
 In addition, the following repository: https://github.com/2024-RNA-Chapter/2024-01-09-SAM-RBM-example, contains a self-contained example of training an RBM on an RNA family from Rfam. Two notebooks are included: one for training on CPU and another on GPU.
 
