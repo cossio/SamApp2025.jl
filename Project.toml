@@ -3,6 +3,9 @@ uuid = "0771bc02-3f64-4ea7-890c-a2e30890e189"
 authors = ["Jorge FdCD <jorge.fdcd@icloud.com>"]
 version = "15.2.2-DEV"
 
+[workspace]
+projects = ["test"]
+
 [deps]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 BioAlignments = "00701ae9-d1dc-5365-b64a-a3a3ebf5695e"
