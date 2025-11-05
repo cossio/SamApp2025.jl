@@ -38,22 +38,10 @@ using StatsBase: countmap
 md"# Imports"
 
 # ╔═╡ f01ccb33-26f8-4fb9-94a2-88be47db3762
-import Makie, CairoMakie, PlutoUI
-
-# ╔═╡ 897ffcd7-e59a-4121-975d-29bc9a27988b
-import CSV, HDF5
-
-# ╔═╡ 49b0a181-8c3b-41dc-b3e0-9e55efa87bd9
-import FASTX, Infernal, Rfam
-
-# ╔═╡ 4a2a79bc-6fb1-45d3-ad4a-abfc889f2737
-import SamApp2025
+import Makie, CairoMakie, PlutoUI, CSV, HDF5, FASTX, Infernal, Rfam, SamApp2025, StatsBase, KernelDensity
 
 # ╔═╡ 5ca1d179-8dda-4e4b-9bab-b1cf4f6bafbe
 import RestrictedBoltzmannMachines as RBMs
-
-# ╔═╡ 98c97d8b-9849-48dc-ae6c-c0924d14e560
-import StatsBase, KernelDensity
 
 # ╔═╡ aa4f2963-ec25-4469-adea-f7f16c69db26
 PlutoUI.TableOfContents()
@@ -260,6 +248,21 @@ begin
 	hits_tax_df.taxa_3 = [ismissing(tax) ? missing : length(tax) ≥ 3 ? tax[3] : missing for tax in hits_tax_df.taxonomy_split];
 end
 
+# ╔═╡ 5d2aa29a-9769-48de-86c7-fee98671362f
+unique(hits_tax_df.taxa_1)
+
+# ╔═╡ 629c66e8-154e-4b4d-9cc5-b46dd463a975
+unique(hits_tax_df.taxa_2[hits_tax_df.taxa_1 .== "Eukaryota"])
+
+# ╔═╡ 5ff83ec2-bca9-4103-9697-bc790f7e1b96
+unique(hits_tax_df.taxa_2[hits_tax_df.taxa_1 .== "Bacteria"])
+
+# ╔═╡ 5cbdd047-c87c-40b1-8e31-1a93d952ec0f
+unique(hits_tax_df.taxa_2)
+
+# ╔═╡ fc54d6d2-cf0f-4c3a-afbd-d3df3ef39b06
+unique(hits_tax_df.taxa_3[replace(hits_tax_df.taxa_2 .== "Actinomycetota", missing => false)])
+
 # ╔═╡ 38c55494-e38a-4358-bc30-ba0f2880eb10
 hits_tax_cnt = countmap(split(join(filter(!ismissing, filter(!ismissing, hits_tax_df.taxonomy)), "; "), "; "));
 
@@ -345,7 +348,9 @@ let fig = Makie.Figure()
 	# fig[0,5] = Makie.Label(fig, "Generated sequences", font=:bold)
 
 	Makie.resize_to_layout!(fig)
-	#Makie.save("/workspaces/SamApp.jl/notebooks/2024-03-14 New paper figures/Figures/PCA.pdf", fig)
+	save_path = tempdir() * "/Fig4.pdf"
+	Makie.save(save_path, fig)
+	@show save_path
 	fig
 end
 
@@ -353,11 +358,7 @@ end
 # ╠═5d5eb95f-6801-47c3-a82e-afab35559c0e
 # ╠═952a79aa-12fa-11ef-2326-d5fe00ff3dfe
 # ╠═f01ccb33-26f8-4fb9-94a2-88be47db3762
-# ╠═897ffcd7-e59a-4121-975d-29bc9a27988b
-# ╠═49b0a181-8c3b-41dc-b3e0-9e55efa87bd9
-# ╠═4a2a79bc-6fb1-45d3-ad4a-abfc889f2737
 # ╠═5ca1d179-8dda-4e4b-9bab-b1cf4f6bafbe
-# ╠═98c97d8b-9849-48dc-ae6c-c0924d14e560
 # ╠═adbed31f-5777-4b6f-acf9-f37a472ef5d8
 # ╠═de469256-6471-4fa9-854b-7b7783295aef
 # ╠═a9fb22f9-4c47-4430-a0aa-cc4075b86f1f
@@ -402,5 +403,10 @@ end
 # ╠═d056e7a9-3cc6-4179-9ce8-f8c567b1a56f
 # ╠═fd502d5b-c54d-4f02-88bb-bfacdd6e350c
 # ╠═d89ee7c9-f646-4832-bf32-427a9aa8a640
+# ╠═5d2aa29a-9769-48de-86c7-fee98671362f
+# ╠═629c66e8-154e-4b4d-9cc5-b46dd463a975
+# ╠═5ff83ec2-bca9-4103-9697-bc790f7e1b96
+# ╠═5cbdd047-c87c-40b1-8e31-1a93d952ec0f
+# ╠═fc54d6d2-cf0f-4c3a-afbd-d3df3ef39b06
 # ╠═38c55494-e38a-4358-bc30-ba0f2880eb10
 # ╠═ea3ad48b-b0ac-4054-9548-fa9ed1842a16
