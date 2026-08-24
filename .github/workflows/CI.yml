@@ -21,7 +21,7 @@ jobs:
           - default
     env:
       JULIA_PKG_USE_CLI_GIT: true
-      JULIA_RFAM_VERSION: '14.10'
+      JULIA_RFAM_VERSION: '14.7'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Set Rfam download directory
