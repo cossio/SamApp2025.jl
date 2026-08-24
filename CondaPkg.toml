@@ -1,0 +1,14 @@
+# Keep the Conda environment compatible with the libraries Julia loads in-process.
+#
+# Logomaker.jl imports Python's matplotlib via PythonCall, inside the same
+# process where CairoMakie has already loaded HarfBuzz_jll (harfbuzz 8.x, via
+# Pango). The dynamic linker satisfies libraqm's `libharfbuzz.so.0` dependency
+# with that already-loaded copy, so Conda builds of libraqm that require
+# `hb_ft_font_get_ft_face` (added in harfbuzz 11) fail to import:
+#
+#     ImportError: libraqm.so.0: undefined symbol: hb_ft_font_get_ft_face
+#
+# Pinning harfbuzz < 11 steers the solver to a matplotlib build without
+# libraqm, avoiding the clash. Drop this pin once HarfBuzz_jll reaches 11+.
+[deps]
+harfbuzz = "<11"
