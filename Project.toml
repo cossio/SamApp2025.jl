@@ -48,7 +48,7 @@ XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 [compat]
 Artifacts = "1.10"
 BioSequences = "3"
-CSV = "0.10"
+CSV = "0.10, 1.1"
 CairoMakie = "0.11,0.12,0.13,0.15"
 CodecZlib = "0.7"
 DCAUtils = "1"
